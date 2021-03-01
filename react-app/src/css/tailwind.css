@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-white rounded-md my-9 w-11/12 mx-auto p-7;
+  }
+  .card__text-xxl {
+    @apply text-3xl font-bold mt-2 mb-1 leading-tight;
+  }
+  .card__text-xxs {
+    @apply text-xs text-gray-450;
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}
